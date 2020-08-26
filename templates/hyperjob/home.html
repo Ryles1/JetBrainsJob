@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<form method="post" action="vacancy/new">{%csrf_token%}
+    <input type="text" name="description">Vacancy Description
+    <button type="submit">Submit</button>
+</form>
+<form method="post" action="resume/new">{%csrf_token%}
+    <input type="text" name="description">Resume Description
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
